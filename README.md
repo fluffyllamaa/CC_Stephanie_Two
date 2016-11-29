@@ -1,1 +1,2 @@
-# CC_Stephanie_Two
+# CC_Stephanie
+Creative Coding Class 
