@@ -37,6 +37,9 @@ function draw() {
     video1.pause();
     video2.loop(); 
     image(video2, 0, 0);
+    fill(255); 
+    rect(0,600,1000,50);
+    rect(0,675,1000,50);
     
   } else if (mouse_clicked && video2_playing) {
     video2.pause();
