@@ -4,6 +4,7 @@ var video1_playing = false;
 var video2_playing = false;
 var video3_playing = false;
 
+//p5 keeps on crashing, may switch back to processing 
 //next step: try to compress videos into smaller files 
 //figure out interface, how user interacts with computer
 //put in story footage 
@@ -36,6 +37,7 @@ function draw() {
     video1.pause();
     video2.loop(); 
     image(video2, 0, 0);
+    
   } else if (mouse_clicked && video2_playing) {
     video2.pause();
     video3.loop();
@@ -46,7 +48,7 @@ function draw() {
 
 function mousePressed() { 
   //checks what is clicked to change to next video. 
-  if (mouse_clicked == false && mouseX >=300 && mouseX <=400) {
+  if (mouse_clicked == false && mouseX >=300 && mouseX <=400 && mouseY >= 300 && mouseY <= 400) {
     mouse_clicked = true;
     video1_playing = true;
   } else if (mouse_clicked && video1_playing) {
