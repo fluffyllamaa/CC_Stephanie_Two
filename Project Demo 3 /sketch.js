@@ -24,10 +24,9 @@ function draw() {
   } else if (scene == 3) {
     mainScene();
   }*/
-  if (scene == 3){
-    mainMenu(); 
-  }
-  else if (scene == 4){
+  if (scene == 3) {
+    mainMenu();
+  } else if (scene == 4) {
     left_screen();
   }
   switch (scene) {
@@ -44,7 +43,7 @@ function draw() {
       mainMenu();
       break;
     case 4:
-      if (mouseX <= 50 && mouseX >= 0){
+      if (mouseIsPressed && mouseX <= 50 && mouseX >= 0) {
         left_screen();
       }
       /*else if ( mouseX >= 300 && mouseX <= 400){
@@ -55,7 +54,7 @@ function draw() {
       intro();
       break;
   }
-  
+
 
 
 
@@ -120,30 +119,37 @@ function left_screen() { //might be a kitchen, living rooom, or somethign else
   part_2_button.remove();
   left_main_button.remove();
   straight_main_button.remove();
-  right_main_button.remove(); 
-  background(0); 
+  right_main_button.remove();
+  background(0);
   fill(0, 255, 255);
   rect(50, 100, 100, 400);
   fill(255);
   rect(0, 450, width, 150);
-  fill(0); 
+  fill(0);
   textSize(20);
-   checkText("Person 1",100,150);
-  textSize(25); 
-  checkText("Where were you a few hours ago?",200,500);
-  
+  checkText("Person 1", 100, 150);
+  textSize(25);
+  checkText("Where were you a few hours ago?", 200, 500);
+  if (mouseIsPressed && mouseX >= 0 && mouseX <= width && mouseY >= 450 && mouseY <= height) {
+    fill(0); 
+    textSize(25);
+    checkText("I was having some drinks in the kitchen with my friend.", 200, 500);
+  }
+
+  //rect(width/2,200,100,200);
+
 }
 
-function straight_screen(){
+function straight_screen() {
   intro_button.remove();
   part_2_button.remove();
   left_main_button.remove();
   straight_main_button.remove();
   right_main_button.remove();
   background(0);
-  fill(255,0,255); 
-  rect(300,100,100,400); 
-   fill(255);
+  fill(255, 0, 255);
+  rect(300, 100, 100, 400);
+  fill(255);
   rect(0, 450, width, 150);
 }
 
@@ -168,8 +174,11 @@ function checkText(string, mx, my) {
 function mousePressed() {
   scene++;
   if (scene > 10) {
-    scene = 0 ;
+    scene = 0;
   }
+  /*else if (scene == 4 & mouseY >= 450 && mouseY <= height){
+    checkText("I was having some drinks in the kitchen with my friend.",200,500); 
+  }*/
 }
 
 function scene_change() {
