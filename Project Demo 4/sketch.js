@@ -1,6 +1,11 @@
 var judge, execution, murder, party, main, larrow, rarrow, uarrow, person;
 var scene;
 
+// make text a variable in order to change it when mouse is pressed. 
+// add music - bgm to create atmosphere. 
+// add some animations 
+// add home screen 
+
 function preload() { //load images
   judge = loadImage("Judge.png");
   execution = loadImage("Execution.png");
@@ -26,7 +31,8 @@ function draw() {
   } else if (scene == 2) {
     execution_scene();
   } else if (scene == 3) {
-    white_flash();
+    party_scene();
+    //white_flash();
   } else if (scene == 4) {
     party_scene();
   } else if (scene == 5) {
@@ -34,7 +40,6 @@ function draw() {
   } else if (scene == 6) {
     party_hall();
   }
-
 
 }
 
@@ -88,6 +93,7 @@ function white_flash() {
 }
 
 function party_scene() {
+  tint(255,126); 
   image(party, 0, 0, width + 100, 500);
   fill(0, 0, 0, 50);
   rect(0, 500, width, 200);
