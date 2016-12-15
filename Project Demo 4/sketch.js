@@ -118,7 +118,8 @@ function party_hall() {
   fill(255);
   textSize(25);
   text("Who are you to Antoniette?", 10, 550);
-  text("I'm her best friend.", 10, 550);
+  fill(162,236,255);
+  text("I'm her best friend.", 10, 575);
   textSize(20);
   text("Next", 900, 575);
 }
