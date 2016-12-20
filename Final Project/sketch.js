@@ -202,7 +202,7 @@ function main_screen() {
   fill(0);
   text("party hall", 160, height / 2 - 50);
   image(uarrow, width / 2 - 50, 100, 100, 100);
-  text("upper level", width / 2 - 50, 150);
+  text("upstairs", width / 2 - 50, 150);
   image(rarrow, 750, height / 2 - 100, 100, 100);
   text("kitchen", 750, height / 2 - 50);
 }
@@ -217,7 +217,7 @@ function main_screen_one() {
   fill(0);
   text("party hall", 160, height / 2 - 50);
   image(uarrow, width / 2 - 50, 100, 100, 100);
-  text("upper level", width / 2 - 50, 150);
+  text("upstairs", width / 2 - 50, 150);
   image(rarrow, 750, height / 2 - 100, 100, 100);
   text("kitchen", 750, height / 2 - 50);
 }
@@ -233,7 +233,7 @@ function main_screen_two() { //scene 4.2
   fill(0);
   text("party hall", 160, height / 2 - 50);
   image(uarrow, width / 2 - 50, 100, 100, 100);
-  text("upper level", width / 2 - 50, 150);
+  text("upstairs", width / 2 - 50, 150);
   image(rarrow, 750, height / 2 - 100, 100, 100);
   text("kitchen", 750, height / 2 - 50);
 }
