@@ -72,7 +72,10 @@ function selectEvent() { //dropdown menu option events
   image(studio, 0, 0, width, height); //setup scene 
   fill(255); //text setup 
   text("Enjoy living with your " + item + "!\nMake sure you take good care of it!", 10, height - 650);
-  text("Press R to pick another animal!",10,height-550) //restart text
+  text("Click the button to pick another animal!",10,height-550) //restart text
+  button = createButton('restart');
+  button.position(10,280);
+  button.mousePressed(reset); 
   //conditionals for when each item is selected
   if (item == "bunny") { 
     image(dogbed, width - 800, height - 200, 500, 300);
@@ -103,11 +106,5 @@ function selectEvent() { //dropdown menu option events
     image(puppy, width - 700, height - 350, 350, 300);
   } else if (item == "parakeet") {
     image(parakeet, width - 650, height - 300, 300, 200);
-  }
-}
-
-function keyPressed(){ //restarts the sketch
-  if (key == "R" || key == "r"){
-    reset();
   }
 }
