@@ -1,3 +1,8 @@
+//links for the video files as google drive links: 
+//video1 = https://drive.google.com/a/nyu.edu/file/d/0B-IwbHWBPjbtRmgxZ3NrQUZUUk0/view?usp=sharing
+//video2 = https://drive.google.com/a/nyu.edu/file/d/0B-IwbHWBPjbtOXlNNndEcU9KVm8/view?usp=sharing
+//video3 = https://drive.google.com/a/nyu.edu/file/d/0B-IwbHWBPjbtenNJWXB0bWFjS28/view?usp=sharing
+
 var video1, video2, video3;
 var mouse_clicked = false;
 var video1_playing = false;
