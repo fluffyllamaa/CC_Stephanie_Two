@@ -1,11 +1,6 @@
 var judge, execution, murder, party, main, larrow, rarrow, uarrow, person, host, butler;
 var scene;
 var txt;
-var main_hall = false;
-// make text a variable in order to change it when mouse is pressed. 
-// add music - bgm to create atmosphere. 
-// add some animations 
-// add home screen 
 
 function preload() { //load images
   judge = loadImage("Judge.png");
@@ -121,6 +116,12 @@ function draw() {
     good_ending();
   }
   console.log(scene);
+}
+
+function start() {
+  fill(0);
+  textSize(50);
+  text("Click to start", 100, 100);
 }
 
 function murder_scene() {
@@ -240,7 +241,7 @@ function main_screen_two() { //scene 4.2
 
 function party_hall() {
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -255,7 +256,7 @@ function party_hall() {
 
 function party_hall_two() { //scene 5.1
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -271,7 +272,7 @@ function party_hall_two() { //scene 5.1
 
 function party_hall_three() { //scene 5.2
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -286,7 +287,7 @@ function party_hall_three() { //scene 5.2
 
 function party_hall_four() { //scene 5.3
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -302,7 +303,7 @@ function party_hall_four() { //scene 5.3
 
 function party_hall_five() { //scene 5.4
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -317,7 +318,7 @@ function party_hall_five() { //scene 5.4
 
 function party_hall_six() { //scene 5.5
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -333,7 +334,7 @@ function party_hall_six() { //scene 5.5
 
 function party_hall_seven() { //scene 5.6
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -348,7 +349,7 @@ function party_hall_seven() { //scene 5.6
 
 function party_hall_eight() { //scene 5.7
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -365,7 +366,7 @@ function party_hall_eight() { //scene 5.7
 
 function party_hall_nine() { //scene 5.8
   //background(255);
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -386,7 +387,7 @@ function party_hall_nine() { //scene 5.8
 }
 
 function party_hall_tenone() { //scene 5.9
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -400,7 +401,7 @@ function party_hall_tenone() { //scene 5.9
 }
 
 function party_hall_choice_one() { //scene 5.91
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -415,7 +416,7 @@ function party_hall_choice_one() { //scene 5.91
 }
 
 function party_hall_tentwo() { //scene 5.92 
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -429,7 +430,7 @@ function party_hall_tentwo() { //scene 5.92
 }
 
 function party_hall_choice_two() { //scene 5.921
-  image(party, 0, 0, width + 100, 500);
+  image(party, 0, 0, width + 100, 550);
   fill(0, 0, 0, 50);
   rect(0, 0, width, height);
   image(person, 0, 0, 350, 600);
@@ -755,19 +756,17 @@ function upstairs_choice_two() { //scene 7.91
   text("Next", 900, 575);
 }
 
-
 function good_ending() {
   background(0);
   fill(255);
   textSize(50);
-  text("You were able to figure out who the murder was and was not executed.\nCongragulations.\nClick to reset", 100, height / 2);
+  text("You were able to figure out who the\nmurder was and was not executed.\nCongragulations.\nClick to reset", 50, height / 2);
 }
 
 function bad_ending() {
   execution_scene();
   fill(255, 0, 0);
   textSize(50);
-
   text("Game Over\nClick to Reset", 100, height / 2);
 }
 
@@ -845,7 +844,7 @@ function mouseClicked() {
       scene = 12;
     } else if (scene == 7.6) {
       scene = 7.7;
-      }else if (scene == 7.8) {
+    } else if (scene == 7.8) {
       scene = 7.81;
     } else if (scene == 7.9) {
       scene = 7.91;
