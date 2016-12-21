@@ -49,6 +49,7 @@ function setup() {
   //drop down menu setup
   menu = createSelect();
   menu.position(width - 600, height - 525);
+  menu.option("pick an animal")
   menu.option("bunny");
   menu.option("kitten");
   menu.option("orange kitten");
